@@ -119,7 +119,7 @@ typedef enum {
  * @param opa_scale scale down all opacities by the factor
  */
 void lv_draw_img(const lv_area_t * coords, const lv_area_t * mask,
-				 const void * src, const lv_style_t * style, lv_opa_t opa_scale);
+                 const void * src, const lv_style_t * style, lv_opa_t opa_scale);
 
 #endif
 
