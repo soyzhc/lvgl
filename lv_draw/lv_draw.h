@@ -32,6 +32,37 @@ extern "C" {
  *      TYPEDEFS
  **********************/ 
 
+typedef enum {
+	LV_BLEND_MODE_OVER,
+	LV_BLEND_MODE_ADD,
+	LV_BLEND_MODE_MULT,
+	LV_BLEND_MODE_ALPHA,
+	LV_BLEND_MODE_CHROME_KEY,
+	LV_BLEND_MODE_MASK,
+}lv_blend_mode_t;
+
+
+typedef enum {
+	LV_COLOR_INDEXED_1BIT,
+	LV_COLOR_INDEXED_2BIT,
+	LV_COLOR_INDEXED_4BIT,
+	LV_COLOR_INDEXED_8BIT,
+
+	LV_COLOR_ALPHA_1BIT,
+	LV_COLOR_ALPHA_2BIT,
+	LV_COLOR_ALPHA_4BIT,
+	LV_COLOR_ALPHA_8BIT,
+
+	LV_COLOR_INDEXED_ALPHA_2BIT,
+	LV_COLOR_INDEXED_ALPHA_4BIT,
+	LV_COLOR_INDEXED_ALPHA_8BIT,
+	LV_COLOR_INDEXED_ALPHA_16BIT,
+
+	LV_COLOR_TRUE_COLOR,
+	LV_COLOR_TRUE_COLOR_ALPHA,
+}lv_color_format_t;
+
+
 /* Image header it is compatible with
  * the result image converter utility*/
 typedef struct
